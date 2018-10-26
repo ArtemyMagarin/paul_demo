@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Простой сумматор</title>
+</head>
+<body>
+	<form action="/" method="post">
+		<input type="number" name="a" value="{{data.get('a', '')}}">+
+		<input type="number" name="b" value="{{data.get('b', '')}}">
+		<input type="submit" value="=">
+		<input type="text" value="{{data.get('answer', '')}}">
+	</form>
+</body>
+</html>
